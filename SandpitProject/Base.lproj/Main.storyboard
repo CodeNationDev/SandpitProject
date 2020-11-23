@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SandpitProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqz-B1-4dH">
+                                <rect key="frame" x="0.0" y="-310" width="414" height="310"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rp-l0-fWG">
+                                        <rect key="frame" x="192" y="242" width="30" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="accessory_close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COa-CB-YxS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="BlueCaixa1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="CSg-1l-Qre"/>
+                                    <constraint firstItem="3rp-l0-fWG" firstAttribute="centerX" secondItem="Vqz-B1-4dH" secondAttribute="centerX" id="m2P-hB-jUx"/>
+                                    <constraint firstAttribute="bottom" secondItem="3rp-l0-fWG" secondAttribute="bottom" constant="20" id="z7R-9w-oox"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0n-pL-pYp">
+                                <rect key="frame" x="147.5" y="792" width="119" height="30"/>
+                                <state key="normal" title="Add Quick Action"/>
+                                <connections>
+                                    <action selector="addItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTb-8J-NTm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vqz-B1-4dH" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1fU-Lb-C7F"/>
+                            <constraint firstItem="l0n-pL-pYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ko-bA-4rW"/>
+                            <constraint firstItem="Vqz-B1-4dH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8Qm-fE-wy0"/>
+                            <constraint firstItem="Vqz-B1-4dH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yGj-Xg-Sxc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l0n-pL-pYp" secondAttribute="bottom" constant="40" id="z4c-Iw-t6m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="roundedView" destination="Vqz-B1-4dH" id="hZt-Uq-SaQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BlueCaixa1">
+            <color red="0.0" green="0.49399998784065247" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
