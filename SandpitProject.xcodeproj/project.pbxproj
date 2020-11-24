@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078A4F5C256BCC9700BC9BEC /* CB_Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 078A4F5B256BCC9700BC9BEC /* CB_Logger */; };
+		078A4F5E256BCC9700BC9BEC /* CB_UIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 078A4F5D256BCC9700BC9BEC /* CB_UIKit */; };
+		078A4F62256BFB2B00BC9BEC /* LoggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4F61256BFB2B00BC9BEC /* LoggerManager.swift */; };
+		078A4FB2256C683100BC9BEC /* Logger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 078A4FB0256C683100BC9BEC /* Logger.xcdatamodeld */; };
 		07FBC1202567136B00446CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC11F2567136B00446CFC /* AppDelegate.swift */; };
 		07FBC1242567136B00446CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC1232567136B00446CFC /* ViewController.swift */; };
 		07FBC1272567136B00446CFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FBC1252567136B00446CFC /* Main.storyboard */; };
@@ -32,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		078A4F61256BFB2B00BC9BEC /* LoggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerManager.swift; sourceTree = "<group>"; };
+		078A4FB1256C683100BC9BEC /* Logger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Logger.xcdatamodel; sourceTree = "<group>"; };
 		07FBC11C2567136B00446CFC /* SandpitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandpitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FBC11F2567136B00446CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FBC1232567136B00446CFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,10 +57,12 @@
 			files = (
 				07FBC1692567C99C00446CFC /* FirebaseRemoteConfig in Frameworks */,
 				07FBC1652567C99C00446CFC /* FirebaseMessaging in Frameworks */,
+				078A4F5E256BCC9700BC9BEC /* CB_UIKit in Frameworks */,
 				07FBC18B256BC24200446CFC /* RealmSwift in Frameworks */,
 				07FBC1592567C99C00446CFC /* FirebaseDatabase in Frameworks */,
 				07FBC15B2567C99C00446CFC /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				07FBC1672567C99C00446CFC /* FirebaseStorage in Frameworks */,
+				078A4F5C256BCC9700BC9BEC /* CB_Logger in Frameworks */,
 				07FBC15F2567C99C00446CFC /* FirebaseAnalytics in Frameworks */,
 				07FBC150256726C500446CFC /* SimplyLogger in Frameworks */,
 				07FBC15D2567C99C00446CFC /* GoogleUtilities_UserDefaults in Frameworks */,
@@ -69,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078A4F60256BFB0000BC9BEC /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				078A4F61256BFB2B00BC9BEC /* LoggerManager.swift */,
+				078A4FB0256C683100BC9BEC /* Logger.xcdatamodeld */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		07FBC1132567136B00446CFC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +105,7 @@
 		07FBC11E2567136B00446CFC /* SandpitProject */ = {
 			isa = PBXGroup;
 			children = (
+				078A4F60256BFB0000BC9BEC /* Logger */,
 				07FBC1812569888100446CFC /* 3DTouch */,
 				07FBC1522567B44D00446CFC /* GoogleService-Info.plist */,
 				07FBC134256713B600446CFC /* FeatureTests */,
@@ -148,6 +166,8 @@
 				07FBC16A2567C99C00446CFC /* FirebaseInAppMessaging-Beta */,
 				07FBC188256BC24200446CFC /* Realm */,
 				07FBC18A256BC24200446CFC /* RealmSwift */,
+				078A4F5B256BCC9700BC9BEC /* CB_Logger */,
+				078A4F5D256BCC9700BC9BEC /* CB_UIKit */,
 			);
 			productName = SandpitProject;
 			productReference = 07FBC11C2567136B00446CFC /* SandpitProject.app */;
@@ -180,6 +200,7 @@
 				07FBC14E256726C500446CFC /* XCRemoteSwiftPackageReference "SimplyLogger" */,
 				07FBC1552567C99C00446CFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				07FBC187256BC24100446CFC /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */,
 			);
 			productRefGroup = 07FBC11D2567136B00446CFC /* Products */;
 			projectDirPath = "";
@@ -209,10 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078A4F62256BFB2B00BC9BEC /* LoggerManager.swift in Sources */,
 				07FBC183256988EF00446CFC /* 3DTouchShortcuts.swift in Sources */,
 				07FBC1242567136B00446CFC /* ViewController.swift in Sources */,
 				07FBC1202567136B00446CFC /* AppDelegate.swift in Sources */,
 				07FBC14B2567161500446CFC /* UIVIew+RoundedView.swift in Sources */,
+				078A4FB2256C683100BC9BEC /* Logger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LYY6BZ69B;
 				INFOPLIST_FILE = SandpitProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,6 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LYY6BZ69B;
 				INFOPLIST_FILE = SandpitProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,6 +443,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeNationDev/SandpitProject.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		07FBC14E256726C500446CFC /* XCRemoteSwiftPackageReference "SimplyLogger" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CodeNationDev/SimplyLogger.git";
@@ -445,6 +478,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		078A4F5B256BCC9700BC9BEC /* CB_Logger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */;
+			productName = CB_Logger;
+		};
+		078A4F5D256BCC9700BC9BEC /* CB_UIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */;
+			productName = CB_UIKit;
+		};
 		07FBC14F256726C500446CFC /* SimplyLogger */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 07FBC14E256726C500446CFC /* XCRemoteSwiftPackageReference "SimplyLogger" */;
@@ -516,6 +559,19 @@
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		078A4FB0256C683100BC9BEC /* Logger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				078A4FB1256C683100BC9BEC /* Logger.xcdatamodel */,
+			);
+			currentVersion = 078A4FB1256C683100BC9BEC /* Logger.xcdatamodel */;
+			path = Logger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 07FBC1142567136B00446CFC /* Project object */;
 }

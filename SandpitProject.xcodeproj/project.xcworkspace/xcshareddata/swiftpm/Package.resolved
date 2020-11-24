@@ -92,6 +92,15 @@
         }
       },
       {
+        "package": "CaixaBankSwift",
+        "repositoryURL": "https://github.com/CodeNationDev/SandpitProject.git",
+        "state": {
+          "branch": "main",
+          "revision": "4132612c91bf3db4c3c6aaaba34129dbbd4894ba",
+          "version": null
+        }
+      },
+      {
         "package": "SimplyLogger",
         "repositoryURL": "https://github.com/CodeNationDev/SimplyLogger.git",
         "state": {

@@ -30,11 +30,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addItem(_ sender: Any) {
-        ForceTouchShortcuts.addShortcut()
+//        ForceTouchShortcuts.addShortcut()
+        LoggerManager.shared.prepareTextFile()
     }
     
     @objc func openMenu() {
         Analytics.logEvent("ContextualMenu", parameters: ["Open":true])
+        LoggerManager.shared.log(message: "Menu open...")
+        LoggerManager.shared.logCD(message: "Menu close...")
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             self.roundedView.transform = CGAffineTransform(translationX: 0, y: (self.roundedView.frame.height) - 30)
         })
@@ -42,6 +45,8 @@ class ViewController: UIViewController {
     
     @objc func closeMenu() {
         Analytics.logEvent("ContextualMenu", parameters: ["Close":true])
+        LoggerManager.shared.log(message: "Menu close...")
+        LoggerManager.shared.loadLogs()
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             self.roundedView.transform = CGAffineTransform(translationX: 0, y: ((self.roundedView.frame.height)) * -1)
         })
