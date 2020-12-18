@@ -11,15 +11,21 @@ import UIKit
 class CBKContextualMenuOptionCell: UITableViewCell {
 
     // MARK: - Outlets
-    @IBOutlet weak var iconLabel: UILabel!
+    @IBOutlet weak var iconLabel: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
     // MARK: - Class Methods
     override func awakeFromNib() {
         super.awakeFromNib()
+        setupViews()
+    }
+    
+    func setupViews() {
+        iconLabel.tintColor = UIColor(named: "GenericWhite")!
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
     }
 }

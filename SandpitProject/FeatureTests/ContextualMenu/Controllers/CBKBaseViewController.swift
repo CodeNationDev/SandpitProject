@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//import aarqCore
 
 public protocol CBKBaseViewControllerAccessibility {
     func setNavBarAccessibility()
@@ -76,6 +76,7 @@ open class CBKBaseViewController: UIViewController {
 
     // MARK: - Accessibility
     public func setNavBarAccessibility() {
+        guard let backBtn = self.navigationItem.leftBarButtonItem else { return }
     }
 }
 

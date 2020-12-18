@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//import aarqCore
 
 // MARK: - Contextual Menu Option Struct
 public struct CBKContextualMenuOption {
@@ -59,7 +59,7 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
     private var options: [CBKContextualMenuOption] = []
     public var contextualMenuViewControllerDelegate: CBKContextualMenuViewControllerDelegate?
     public var contextualMenuViewControllerDataSource: CBKContextualMenuViewControllerDataSource?
-    private let cbkBlue = UIColor.systemBlue
+    private let cbkBlue = UIColor(named: "BlueCaixa1")!
 
     // MARK: - Class Methods
     public init(menuTitle: String, options: [CBKContextualMenuOption], delegate: CBKContextualMenuViewControllerDelegate?) {
@@ -70,7 +70,7 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
             self.contextualMenuViewControllerDelegate = delegate
         }
 
-        super.init(nibName: "CBKContextualMenuViewController", bundle: Bundle(for: MCAIUCOMPS.self))
+        super.init(nibName: "CBKContextualMenuViewController", bundle: .main)
     }
 
     public init(menuTitle: String,
@@ -86,7 +86,7 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
             self.contextualMenuViewControllerDataSource = dataSource
         }
 
-        super.init(nibName: "CBKContextualMenuViewController", bundle: Bundle(for: MCAIUCOMPS.self))
+        super.init(nibName: "CBKContextualMenuViewController", bundle: .main)
     }
 
     required public init?(coder aDecoder: NSCoder) {
@@ -105,7 +105,7 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
 
         self.titleLabel.setNeedsUpdateConstraints()
 
-        tableView.register(UINib(nibName: "CBKContextualMenuOptionCell", bundle: Bundle(for: MCAIUCOMPS.self)), forCellReuseIdentifier: "CBKContextualMenuOptionCell")
+        tableView.register(UINib(nibName: "CBKContextualMenuOptionCell", bundle: .main), forCellReuseIdentifier: "CBKContextualMenuOptionCell")
 
         self.menuContentView.backgroundColor = cbkBlue
         self.optionsContentView.backgroundColor = UIColor.clear
@@ -113,7 +113,7 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
         createGradientBottom()
         createGradientTop()
 
-        self.configureUI()
+        
 
         self.setupAccessibility()
     }
@@ -141,8 +141,8 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
         self.closeButton.isAccessibilityElement = true
         self.closeButton.accessibilityTraits = UIAccessibilityTraits.button
         let stringClose = "caixabank_accessibilitat_ios_basics_topbar_accion_cerrar"
-        let closeAccessibility = MCAIUCOMPSUtils.localizedString(stringClose, bundle: Bundle(for: MCAIUCOMPS.self))
-        self.closeButton.accessibilityLabel = closeAccessibility
+        
+       
     }
 
     private func setMenuHeight() {
@@ -230,7 +230,7 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
         let option = options[indexPath.row]
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "CBKContextualMenuOptionCell", for: indexPath) as? CBKContextualMenuOptionCell ?? CBKContextualMenuOptionCell()
-        cell.iconLabel.text = option.icon
+        cell.iconLabel.image = UIImage(named: option.icon)?.withRenderingMode(.alwaysTemplate)
         cell.titleLabel.text = option.title
         cell.isAccessibilityElement = true
         cell.iconLabel.isAccessibilityElement = false
@@ -281,12 +281,5 @@ public class CBKContextualMenuViewController: CBKBaseViewController, UITableView
     // MARK: - Actions
     @IBAction func closeButtonPressed(_ sender: UIButton) {
         endingAnimation(completionAnimation: nil)
-    }
-}
-
-// MARK: - ADAMCommonViewController Protocol Methods
-extension CBKContextualMenuViewController {
-    public func configureUI() {
-        super.setStatusBarWhite(true)
     }
 }

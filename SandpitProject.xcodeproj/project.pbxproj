@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076F3C3C256FC9860023CA42 /* CBKCurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C34256FC9860023CA42 /* CBKCurvedView.swift */; };
+		076F3C3D256FC9860023CA42 /* CBKContextualMenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C37256FC9860023CA42 /* CBKContextualMenuOptionCell.swift */; };
+		076F3C3E256FC9860023CA42 /* CBKContextualMenuOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076F3C38256FC9860023CA42 /* CBKContextualMenuOptionCell.xib */; };
+		076F3C3F256FC9860023CA42 /* CBKContextualMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076F3C39256FC9860023CA42 /* CBKContextualMenuViewController.xib */; };
+		076F3C40256FC9860023CA42 /* CBKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C3A256FC9860023CA42 /* CBKBaseViewController.swift */; };
+		076F3C41256FC9860023CA42 /* CBKContextualMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C3B256FC9860023CA42 /* CBKContextualMenuViewController.swift */; };
+		076F3C44256FCBF40023CA42 /* TestingContextualMEnu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C43256FCBF40023CA42 /* TestingContextualMEnu.swift */; };
 		078A4F5C256BCC9700BC9BEC /* CB_Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 078A4F5B256BCC9700BC9BEC /* CB_Logger */; };
 		078A4F5E256BCC9700BC9BEC /* CB_UIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 078A4F5D256BCC9700BC9BEC /* CB_UIKit */; };
 		078A4F62256BFB2B00BC9BEC /* LoggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078A4F61256BFB2B00BC9BEC /* LoggerManager.swift */; };
@@ -36,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0712698125824FDD00C59FE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		0712698225824FDD00C59FE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0712698425824FE400C59FE4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		0712698525824FE400C59FE4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0712698625824FEE00C59FE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/Info.plist; sourceTree = "<group>"; };
+		0712698825824FF800C59FE4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = de.lproj/Info.plist; sourceTree = "<group>"; };
+		0712698925824FF900C59FE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		076F3C34256FC9860023CA42 /* CBKCurvedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBKCurvedView.swift; sourceTree = "<group>"; };
+		076F3C37256FC9860023CA42 /* CBKContextualMenuOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBKContextualMenuOptionCell.swift; sourceTree = "<group>"; };
+		076F3C38256FC9860023CA42 /* CBKContextualMenuOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBKContextualMenuOptionCell.xib; sourceTree = "<group>"; };
+		076F3C39256FC9860023CA42 /* CBKContextualMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBKContextualMenuViewController.xib; sourceTree = "<group>"; };
+		076F3C3A256FC9860023CA42 /* CBKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBKBaseViewController.swift; sourceTree = "<group>"; };
+		076F3C3B256FC9860023CA42 /* CBKContextualMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBKContextualMenuViewController.swift; sourceTree = "<group>"; };
+		076F3C43256FCBF40023CA42 /* TestingContextualMEnu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingContextualMEnu.swift; sourceTree = "<group>"; };
 		078A4F61256BFB2B00BC9BEC /* LoggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerManager.swift; sourceTree = "<group>"; };
 		078A4FB1256C683100BC9BEC /* Logger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Logger.xcdatamodel; sourceTree = "<group>"; };
 		07FBC11C2567136B00446CFC /* SandpitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandpitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +65,6 @@
 		07FBC1262567136B00446CFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07FBC1282567137400446CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FBC12B2567137400446CFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		07FBC12D2567137400446CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FBC14A2567161500446CFC /* UIVIew+RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+RoundedView.swift"; sourceTree = "<group>"; };
 		07FBC1522567B44D00446CFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07FBC182256988EE00446CFC /* 3DTouchShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchShortcuts.swift; sourceTree = "<group>"; };
@@ -77,6 +97,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076F3C33256FC9860023CA42 /* ContextualMenu */ = {
+			isa = PBXGroup;
+			children = (
+				076F3C34256FC9860023CA42 /* CBKCurvedView.swift */,
+				076F3C35256FC9860023CA42 /* Controllers */,
+			);
+			path = ContextualMenu;
+			sourceTree = "<group>";
+		};
+		076F3C35256FC9860023CA42 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				076F3C36256FC9860023CA42 /* Cells */,
+				076F3C39256FC9860023CA42 /* CBKContextualMenuViewController.xib */,
+				076F3C3A256FC9860023CA42 /* CBKBaseViewController.swift */,
+				076F3C3B256FC9860023CA42 /* CBKContextualMenuViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		076F3C36256FC9860023CA42 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				076F3C37256FC9860023CA42 /* CBKContextualMenuOptionCell.swift */,
+				076F3C38256FC9860023CA42 /* CBKContextualMenuOptionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		078A4F60256BFB0000BC9BEC /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +163,8 @@
 				07FBC1252567136B00446CFC /* Main.storyboard */,
 				07FBC1282567137400446CFC /* Assets.xcassets */,
 				07FBC12A2567137400446CFC /* LaunchScreen.storyboard */,
-				07FBC12D2567137400446CFC /* Info.plist */,
+				0712698725824FEE00C59FE4 /* Info.plist */,
+				076F3C43256FCBF40023CA42 /* TestingContextualMEnu.swift */,
 			);
 			path = SandpitProject;
 			sourceTree = "<group>";
@@ -122,6 +172,7 @@
 		07FBC134256713B600446CFC /* FeatureTests */ = {
 			isa = PBXGroup;
 			children = (
+				076F3C33256FC9860023CA42 /* ContextualMenu */,
 				07FBC14A2567161500446CFC /* UIVIew+RoundedView.swift */,
 			);
 			path = FeatureTests;
@@ -194,6 +245,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				de,
 			);
 			mainGroup = 07FBC1132567136B00446CFC;
 			packageReferences = (
@@ -217,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FBC12C2567137400446CFC /* LaunchScreen.storyboard in Resources */,
+				076F3C3F256FC9860023CA42 /* CBKContextualMenuViewController.xib in Resources */,
+				076F3C3E256FC9860023CA42 /* CBKContextualMenuOptionCell.xib in Resources */,
 				07FBC1532567B44D00446CFC /* GoogleService-Info.plist in Resources */,
 				07FBC1292567137400446CFC /* Assets.xcassets in Resources */,
 				07FBC1272567136B00446CFC /* Main.storyboard in Resources */,
@@ -231,21 +286,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				078A4F62256BFB2B00BC9BEC /* LoggerManager.swift in Sources */,
+				076F3C44256FCBF40023CA42 /* TestingContextualMEnu.swift in Sources */,
+				076F3C3C256FC9860023CA42 /* CBKCurvedView.swift in Sources */,
 				07FBC183256988EF00446CFC /* 3DTouchShortcuts.swift in Sources */,
+				076F3C41256FC9860023CA42 /* CBKContextualMenuViewController.swift in Sources */,
+				076F3C3D256FC9860023CA42 /* CBKContextualMenuOptionCell.swift in Sources */,
 				07FBC1242567136B00446CFC /* ViewController.swift in Sources */,
 				07FBC1202567136B00446CFC /* AppDelegate.swift in Sources */,
 				07FBC14B2567161500446CFC /* UIVIew+RoundedView.swift in Sources */,
 				078A4FB2256C683100BC9BEC /* Logger.xcdatamodeld in Sources */,
+				076F3C40256FC9860023CA42 /* CBKBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0712698725824FEE00C59FE4 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0712698625824FEE00C59FE4 /* es */,
+				0712698825824FF800C59FE4 /* de */,
+				0712698925824FF900C59FE4 /* en */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
 		07FBC1252567136B00446CFC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				07FBC1262567136B00446CFC /* Base */,
+				0712698125824FDD00C59FE4 /* es */,
+				0712698425824FE400C59FE4 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -254,6 +326,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				07FBC12B2567137400446CFC /* Base */,
+				0712698225824FDD00C59FE4 /* es */,
+				0712698525824FE400C59FE4 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -265,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -326,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

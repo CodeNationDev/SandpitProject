@@ -3,7 +3,13 @@ import UIKit
 import FirebaseAnalytics
 import FirebaseCrashlytics
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CBKContextualMenuViewControllerDelegate {
+
+    func pressed(option: Int) {
+        print("OLEEE \(option)")
+    }
+    
+    
 
     @IBOutlet weak var roundedView: UIView!
     let sum: UIImage! = nil
@@ -31,7 +37,17 @@ class ViewController: UIViewController {
     
     @IBAction func addItem(_ sender: Any) {
 //        ForceTouchShortcuts.addShortcut()
-        LoggerManager.shared.prepareTextFile()
+        let vc = CBKContextualMenuViewController(menuTitle: "Options", options: [
+                                                    CBKContextualMenuOption(withIcon: "cards", andTitle: "Cards"),
+                                                    CBKContextualMenuOption(withIcon: "notifications", andTitle: "Notifications"),
+                                                    CBKContextualMenuOption(withIcon: "message", andTitle: "Mensajes"),
+                                                    CBKContextualMenuOption(withIcon: "piggy", andTitle: "Savings"),
+                                                    CBKContextualMenuOption(withIcon: "bookmarks", andTitle: "Favorites")
+                                                    ],
+        delegate: self)
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true, completion: nil)
     }
     
     @objc func openMenu() {

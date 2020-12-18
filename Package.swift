@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -28,10 +28,12 @@ let package = Package(
         .target(
             name: "CB_UIKit",
             dependencies: [],
-            path: "Sources/CB_UIKit"),
+            path: "Sources/CB_UIKit",
+            exclude: ["SandpitProject"]),
         .target(
             name: "CB_Logger",
             dependencies: [],
-            path: "Sources/CB_Logger")
+            path: "Sources/CB_Logger",
+            exclude: ["SandpitProject"])
     ]
 )
