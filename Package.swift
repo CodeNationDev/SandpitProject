@@ -29,11 +29,11 @@ let package = Package(
             name: "CB_UIKit",
             dependencies: [],
             path: "Sources/CB_UIKit",
-            exclude: ["SandpitProject"]),
+            exclude: ["./SandpitProject"]),
         .target(
             name: "CB_Logger",
             dependencies: [],
             path: "Sources/CB_Logger",
-            exclude: ["SandpitProject"])
+            exclude: ["./SandpitProject"])
     ]
 )

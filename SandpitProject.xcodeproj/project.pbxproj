@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0763365B258CDD6A0053868C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0763365A258CDD6A0053868C /* Alamofire */; };
 		076F3C3C256FC9860023CA42 /* CBKCurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C34256FC9860023CA42 /* CBKCurvedView.swift */; };
 		076F3C3D256FC9860023CA42 /* CBKContextualMenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076F3C37256FC9860023CA42 /* CBKContextualMenuOptionCell.swift */; };
 		076F3C3E256FC9860023CA42 /* CBKContextualMenuOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076F3C38256FC9860023CA42 /* CBKContextualMenuOptionCell.xib */; };
@@ -87,6 +88,7 @@
 				07FBC150256726C500446CFC /* SimplyLogger in Frameworks */,
 				07FBC15D2567C99C00446CFC /* GoogleUtilities_UserDefaults in Frameworks */,
 				07FBC1632567C99C00446CFC /* FirebaseCrashlytics in Frameworks */,
+				0763365B258CDD6A0053868C /* Alamofire in Frameworks */,
 				07FBC1612567C99C00446CFC /* FirebaseStorageSwift-Beta in Frameworks */,
 				07FBC1572567C99C00446CFC /* FirebaseFirestore in Frameworks */,
 				07FBC189256BC24200446CFC /* Realm in Frameworks */,
@@ -219,6 +221,7 @@
 				07FBC18A256BC24200446CFC /* RealmSwift */,
 				078A4F5B256BCC9700BC9BEC /* CB_Logger */,
 				078A4F5D256BCC9700BC9BEC /* CB_UIKit */,
+				0763365A258CDD6A0053868C /* Alamofire */,
 			);
 			productName = SandpitProject;
 			productReference = 07FBC11C2567136B00446CFC /* SandpitProject.app */;
@@ -254,6 +257,7 @@
 				07FBC1552567C99C00446CFC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				07FBC187256BC24100446CFC /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */,
+				07633659258CDD6A0053868C /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 07FBC11D2567136B00446CFC /* Products */;
 			projectDirPath = "";
@@ -519,6 +523,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		07633659258CDD6A0053868C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CodeNationDev/SandpitProject.git";
@@ -554,6 +566,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0763365A258CDD6A0053868C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07633659258CDD6A0053868C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		078A4F5B256BCC9700BC9BEC /* CB_Logger */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 078A4F5A256BCC9600BC9BEC /* XCRemoteSwiftPackageReference "SandpitProject" */;
