@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "9e0328127dfb801cefe8ac53a13c0c90a7770448",
-          "version": "5.4.0"
+          "revision": "eaf6e622dd41b07b251d8f01752eab31bc811493",
+          "version": "5.4.1"
         }
       },
       {
@@ -105,7 +105,7 @@
         "repositoryURL": "https://github.com/CodeNationDev/SandpitProject.git",
         "state": {
           "branch": "main",
-          "revision": "b85975429e15834dc2c0c08b6d47d5cf7795807a",
+          "revision": "e4cfd74ad93c5f7af8ad6178fc616084745cac84",
           "version": null
         }
       },
